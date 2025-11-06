@@ -13,12 +13,16 @@ body {
   color: #04b2e2;
   margin: 5px;
 }
+.donation-sec .donation-title {
+  font-size: 3rem;
+}
 .donation-sec .donation-subtitle {
   text-transform: uppercase;
 }
 .donation-sec .donation-info {
-  margin: 15px;
   line-height: 1.5;
+  max-width: 400px;
+  margin: 20px;
 }
 
 .donation-form {
@@ -31,6 +35,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin: 0 0 10px 0;
+  max-width: 400px;
 }
 .donation-form .donate-btn {
   border: none;
@@ -71,6 +76,7 @@ body {
   align-items: center;
 }
 .get-involved__title {
+  font-size: 3rem;
   margin: 40px 0 0 0;
 }
 .get-involved__info {
@@ -90,4 +96,35 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 170px;
+}
+.get-involved img {
+  border-radius: 20px;
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .donation-sec {
+    width: 50%;
+  }
+  .get-involved {
+    width: 50%;
+  }
+  .get-involved__info {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .get-involved__info {
+    max-width: 700px;
+  }
+  .get-involved img {
+    height: 900px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=donate.css.map */

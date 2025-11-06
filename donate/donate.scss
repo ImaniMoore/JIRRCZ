@@ -20,13 +20,18 @@ body {
     margin: 5px;
   }
 
+  .donation-title {
+    font-size: 3rem;
+  }
+
   .donation-subtitle {
     text-transform: uppercase;
   }
 
   .donation-info {
-    margin: 15px;
     line-height: 1.5;
+    max-width: 400px;
+    margin: 20px;
   }
 }
 
@@ -40,6 +45,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     margin: 0 0 10px 0;
+    max-width: 400px;
   }
 
   .donate-btn {
@@ -87,6 +93,7 @@ body {
   align-items: center;
 
   &__title {
+    font-size: 3rem;
     margin: 40px 0 0 0;
   }
 
@@ -111,5 +118,44 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: 170px;
+  }
+
+  img {
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .donation-sec {
+    width: 50%;
+  }
+
+  .get-involved {
+    width: 50%;
+
+    &__info {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .get-involved {
+
+    &__info {
+      max-width: 700px;
+    }
+    
+    img {
+      height: 900px;
+      object-fit: cover;
+    }
   }
 }
