@@ -3,6 +3,12 @@ body {
   font-size: 1rem;
 }
 
+header,
+footer {
+  background-color: #04b2e2;
+  height: 80px;
+}
+
 .donation-sec {
   display: flex;
   flex-direction: column;
@@ -35,7 +41,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin: 0 0 10px 0;
-  max-width: 400px;
 }
 .donation-form .donate-btn {
   border: none;
