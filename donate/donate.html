@@ -47,17 +47,23 @@
           <input type="number" name="amount" id="amount" pattern="^\d+([,\.]\d+)?$" placeholder="$25.00" autofocus required>
           
           <label class="donation-form__label donation-form__label--required">Name</label>
-          <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+          <div class="donation-form__lg">
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+          </div>
           
           <label class="donation-form__label donation-form__label--required">Email</label>
           <input type="email" name="email" id="email" placeholder="example@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Please input a valid email address. Example: name@email.com" required>
           
           <label class="donation-form__label donation-form__label--required">Address</label>
-          <input type="text" name="address-line-1" id="address-line-1" placeholder="Street Address" required>
-          <input type="text" name="address-line-2" id="address-line-2" placeholder="Apartment or suite number (optional)">
-          <input type="text" name="city" id="city" placeholder="City" required>
-          <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required>
+          <div class="donation-form__lg">
+            <input type="text" name="address-line-1" id="address-line-1" placeholder="Street Address" required>
+            <input type="text" name="address-line-2" id="address-line-2" placeholder="Apartment or suite number (optional)">
+          </div>
+          <div class="donation-form__lg">
+            <input type="text" name="city" id="city" placeholder="City" required>
+            <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required>
+          </div>
           
           <label class="donation-form__label donation-form__label--required">Phone</label>
           <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required>

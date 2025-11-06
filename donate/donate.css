@@ -142,7 +142,19 @@ footer {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .donation-form input {
+  .donation-form {
     width: 50%;
+  }
+  .donation-form__lg {
+    display: flex;
+    width: 105%;
+  }
+  .donation-form__lg #first-name,
+  .donation-form__lg #address-line-1,
+  .donation-form__lg #city {
+    margin-right: 20px;
+  }
+  .donation-form input {
+    width: 100%;
   }
 }/*# sourceMappingURL=donate.css.map */

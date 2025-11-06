@@ -184,9 +184,22 @@ footer {
   }
 
   .donation-form {
+    width: 50%;
 
+    &__lg {
+      display: flex;
+      width: 105%;
+
+      #first-name,
+      #address-line-1,
+      #city {
+        margin-right: 20px;
+      }
+    }
+    
     input {
-      width: 50%;
+      width: 100%;
+      // width: 200px;
     }
   }
 }
