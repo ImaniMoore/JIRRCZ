@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+header,
+footer {
+  background-color: #04b2e2;
+  height: 80px;
+}
+
+.mission-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mission-sec__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.mission-sec__info h2 {
+  margin-bottom: 0;
+}/*# sourceMappingURL=mission.css.map */

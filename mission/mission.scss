@@ -1,0 +1,45 @@
+// Variables
+$primary-color: #04b2e2;
+$secondary-color: #ffee8c;
+$btn-text-color: #fff;
+$border-color: rgb(166, 165, 165);
+
+@mixin center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @mixin input-box-border {
+//   border: 1px solid $border-color;
+//   border-radius: 10px;
+//   height: 44px;
+//   padding: 0 10px;
+//   margin: 8px 0;
+// }
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+header,
+footer {
+  background-color: $primary-color;
+  height: 80px;
+}
+
+.mission-sec {
+  @include center-items();
+  flex-direction: column;
+
+  &__info {
+    @include center-items();
+    flex-direction: column;
+    padding: 20px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}
