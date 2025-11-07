@@ -17,14 +17,15 @@ footer {
 }
 .donation-sec .donation-title,
 .donation-sec .donation-subtitle {
-  color: #04B2E2;
   margin: 5px;
 }
 .donation-sec .donation-title {
+  color: #04B2E2;
   font-size: 3rem;
   margin: 30px 0 0;
 }
 .donation-sec .donation-subtitle {
+  color: #003260;
   text-transform: uppercase;
 }
 .donation-sec .donation-info {
@@ -51,6 +52,7 @@ footer {
   font-size: 1rem;
   font-weight: 600;
   width: 170px;
+  cursor: pointer;
 }
 .donation-form .donate-btn--selected {
   background-color: #04B2E2;
@@ -64,11 +66,16 @@ footer {
   color: red;
 }
 .donation-form input {
-  border: 1px solid rgb(166, 165, 165);
+  border: 2px solid rgb(166, 165, 165);
   border-radius: 10px;
   height: 44px;
+  width: 90%;
   padding: 0 10px;
   margin: 8px 0;
+}
+.donation-form input:focus {
+  border-color: #003260;
+  outline: none;
 }
 .donation-form #donation-form__submit-btn {
   background-color: #04B2E2;
@@ -117,6 +124,7 @@ footer {
   text-transform: uppercase;
   text-align: center;
   width: 170px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 700px) {
@@ -131,7 +139,7 @@ footer {
     width: 50%;
   }
   .get-involved__info {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -146,6 +154,10 @@ footer {
   .donation-form {
     width: 50%;
   }
+  .donation-form__type-btn,
+  .donation-form #donation-form__submit-btn {
+    width: 105%;
+  }
   .donation-form__lg {
     display: flex;
     width: 105%;
@@ -157,5 +169,12 @@ footer {
   }
   .donation-form input {
     width: 100%;
+  }
+  .reach-out__title {
+    font-size: 1.75rem;
+    margin: 0 0 5px;
+  }
+  .reach-out__sub-info {
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=donate.css.map */
