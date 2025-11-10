@@ -8,7 +8,7 @@ $font1: "DM Serif Display", serif;
 $font2: "Playfair Display", sans-serif;
 
 // BASE STYLES
-body {
+body{
   margin: 0;
   padding: 0;
   color: $dark-blue;
@@ -81,8 +81,10 @@ header {
   justify-content: center;
 
   .image-item {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 1rem;
 
     img {
@@ -112,54 +114,29 @@ header {
   width: 50%;  
   height: auto;}
 
-// NEWSLETTER FORM
-.newsletter {
-  form {
-    background-color: $light-blue;
-    text-align: center;
-    color: $dark-blue;
-    padding: 1em;
-
-    input {
-      border-radius: 10px;
-      padding: 0.5rem;
-      width: 20ch;
-      border: none;}
-
-    button {
-      margin: 5px;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 10px;
-      background-color: $pink;
-      color: $dark-blue;
-      cursor: pointer;}}}
-
-
-
 // MEDIA QUERIES
 //TABLET
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .donate-here {font-size: 2rem;}
+
   .mission {font-size: 1.5rem;}
 
   .bottom-images .image-item img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
+    margin: 20px 5px 0 30px;}
 
-    margin: 20px 5px 0 30px;}}
-  .desc {font-size: 1.5rem;
-  }
+  .desc {font-size: 2rem;}
 
   .info-title {font-size: 1.5rem;}
 
   .logo {max-width: 50%;
-  height: auto;}
+  height: auto;}}
 
 
 //DESKTOP
 @media screen and (min-width: 769px) {
-  h1 {font-size: 5rem;}
+  header {font-size: 2.5rem;}
 
 .donate-here{font-size: 2.5rem;}
 
@@ -167,10 +144,9 @@ header {
 
   .bottom-images .image-item img {
     max-width: 70%;
-    height: auto;
-    margin: 20px 50px;}
+    height: auto;}
   .desc {font-size: 3rem;}
-  
+
 .info-title{font-size: 3rem;
   margin-left: 20px;}
 

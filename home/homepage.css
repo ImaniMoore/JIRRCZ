@@ -72,8 +72,10 @@ header {
   justify-content: center;
 }
 .bottom-images .image-item {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 1rem;
 }
 .bottom-images .image-item img {
@@ -104,28 +106,6 @@ header {
   height: auto;
 }
 
-.newsletter form {
-  background-color: #04b2e2;
-  text-align: center;
-  color: #003260;
-  padding: 1em;
-}
-.newsletter form input {
-  border-radius: 10px;
-  padding: 0.5rem;
-  width: 20ch;
-  border: none;
-}
-.newsletter form button {
-  margin: 5px;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #ffa69e;
-  color: #003260;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .donate-here {
     font-size: 2rem;
@@ -134,27 +114,24 @@ header {
     font-size: 1.5rem;
   }
   .bottom-images .image-item img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     margin: 20px 5px 0 30px;
   }
+  .desc {
+    font-size: 2rem;
+  }
+  .info-title {
+    font-size: 1.5rem;
+  }
+  .logo {
+    max-width: 50%;
+    height: auto;
+  }
 }
-.desc {
-  font-size: 1.5rem;
-}
-
-.info-title {
-  font-size: 1.5rem;
-}
-
-.logo {
-  max-width: 50%;
-  height: auto;
-}
-
 @media screen and (min-width: 769px) {
-  h1 {
-    font-size: 5rem;
+  header {
+    font-size: 2.5rem;
   }
   .donate-here {
     font-size: 2.5rem;
@@ -165,7 +142,6 @@ header {
   .bottom-images .image-item img {
     max-width: 70%;
     height: auto;
-    margin: 20px 50px;
   }
   .desc {
     font-size: 3rem;
