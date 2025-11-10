@@ -4,7 +4,13 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-header,
+header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: #04B2E2;
+}
+
 footer {
   background-color: #04B2E2;
   height: 80px;
