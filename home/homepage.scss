@@ -117,6 +117,8 @@ header {
 // MEDIA QUERIES
 //TABLET
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  header h1 {font-size: 2rem;}
+
   .donate-here {font-size: 2rem;}
 
   .mission {font-size: 1.5rem;}
@@ -126,7 +128,7 @@ header {
     height: auto;
     margin: 20px 5px 0 30px;}
 
-  .desc {font-size: 2rem;}
+  .desc, .desc a {font-size: 2rem;}
 
   .info-title {font-size: 1.5rem;}
 
@@ -136,7 +138,7 @@ header {
 
 //DESKTOP
 @media screen and (min-width: 769px) {
-  header {font-size: 2.5rem;}
+header h1{font-size: 2.5rem;}
 
 .donate-here{font-size: 2.5rem;}
 
@@ -145,7 +147,8 @@ header {
   .bottom-images .image-item img {
     max-width: 70%;
     height: auto;}
-  .desc {font-size: 3rem;}
+  
+    .desc a{font-size: 2rem;}
 
 .info-title{font-size: 3rem;
   margin-left: 20px;}
