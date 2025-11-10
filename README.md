@@ -29,6 +29,9 @@ open home/home.html
 
 ## Authors
 
+<img src="assets/meet-the-team.png"/>
+
+
 * [Imani Moore](https://github.com/ImaniMoore) </br>
 * [Cynthia Rincon](http://www.linkedin.com/in/cynthia-r-0299a2191) </br>
 * [Zayra Guerrero Camarillo](https://www.linkedin.com/in/zayraadileneguerrerocamarillo) </br>
