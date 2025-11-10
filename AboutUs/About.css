@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -64,7 +65,8 @@ h6 {
   color: white;
 }
 
-.heading, h1 {
+.heading,
+h1 {
   color: white;
   font-size: 40px;
   margin: 0;
@@ -199,7 +201,7 @@ h6 {
     border-radius: 8px;
   }
   ul .btn {
-    background-color: #FFA69E;
+    background-color: #ffa69e;
     color: white;
     padding: 15px 15px;
     font-weight: bold;
@@ -223,7 +225,7 @@ h6 {
     color: white;
   }
   ul .btn {
-    background-color: #FFA69E;
+    background-color: #ffa69e;
     color: white;
     padding: 15px 15px;
     font-weight: bold;
@@ -239,4 +241,5 @@ h6 {
     background-color: #003260;
     color: white;
   }
-}/*# sourceMappingURL=About.css.map */
+} /*# sourceMappingURL=About.css.map */
+
