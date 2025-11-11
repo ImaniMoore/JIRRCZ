@@ -24,9 +24,8 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-header,
-footer {
-  background-color: #04B2E2;
+header {
+  background-color: #04b2e2;
   height: 80px;
 }
 
@@ -37,7 +36,7 @@ footer {
   flex-direction: column;
 }
 .mission-sec__title {
-  color: #04B2E2;
+  color: #04b2e2;
   text-transform: uppercase;
   font-size: 3rem;
   margin: 20px 0 0;
@@ -61,7 +60,7 @@ footer {
   min-height: 400px;
 }
 .mission-sec__info--color-block {
-  background-color: #FFA69E;
+  background-color: #ffa69e;
 }
 .mission-sec__info h2 {
   text-transform: uppercase;
@@ -71,7 +70,8 @@ footer {
 .mission-sec__info p {
   font-size: 1.5rem;
 }
-.mission-sec__info h2, .mission-sec__info p {
+.mission-sec__info h2,
+.mission-sec__info p {
   padding: 20px;
 }
 
@@ -125,4 +125,34 @@ footer {
   .mission-sec__info p {
     width: 60%;
   }
+}
+footer {
+  margin-top: auto;
+  background-color: #04b2e2;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.trademark {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #b3b3b3;
+}
+
+.disclosure {
+  font-size: 0.8rem;
+  color: white;
+  max-width: 600px;
+  line-height: 1.4;
+  margin-top: 5px;
 }/*# sourceMappingURL=mission.css.map */

@@ -1,138 +1,38 @@
+$primary-color: #04b2e2;
+$secondary-color: #003260;
+$btn-text-color: #fff;
+$border-color: rgb(166, 165, 165);
+$accent-color: #ffa69e;
 body {
+  text-align: center;
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  font-size: 1rem;
-  color: #333;
 }
-
-p {
-  font-size: 20px;
-  color: #ffa69e;
-  text-align: center;
-}
-
-.contact-title {
-  text-align: center;
-  color: #04b2e2;
-  font-size: 2.5rem;
-  margin-top: 30px;
-}
-
-.contact-form,
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  max-width: 600px;
+div {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
   background-color: #f9f9f9;
-  padding: 25px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  margin: 30px auto;
 }
-.contact-form .radio,
-.container .radio {
-  color: #04b2e2;
-  justify-content: center;
-  display: grid;
-  font-size: 10px;
+header div,
+.logo {
+  padding: 0;
+  margin: 0;
+  background: none;
 }
-.contact-form label,
-.container label {
-  font-weight: 550;
-  margin-top: 10px;
-}
-.contact-form input,
-.contact-form textarea,
-.container input,
-.container textarea {
-  border: 1px solid #a6a5a5;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 1rem;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.contact-form input[type=radio],
-.container input[type=radio] {
-  margin-right: 8px;
-  accent-color: #04b2e2;
-}
-.contact-form textarea,
-.container textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-.contact-form .options,
-.container .options {
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #04b2e2;
-  justify-content: center;
-  display: flex;
-}
-.contact-form input[type=submit],
-.container input[type=submit] {
-  background-color: #04b2e2;
-  color: #fff;
-  border: round;
-  padding: 15px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 15px;
-}
-.contact-form section,
-.container section {
-  justify-content: center;
-  display: center;
-}
-
-footer {
-  margin-top: auto;
-  background-color: #04b2e2;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-.trademark {
-  font-size: 0.9rem;
-  margin-top: 10px;
-  color: #b3b3b3;
-}
-
-.disclosure {
-  font-size: 0.8rem;
-  color: white;
-  max-width: 600px;
-  line-height: 1.4;
-  margin-top: 5px;
-}
-
 header {
   height: 100px;
   position: sticky;
   top: 0;
-  background-color: #04b2e2;
+  background-color: $primary-color;
 }
-
 .logo img {
   height: 90px;
   width: auto;
   border-radius: 50%;
   margin: 5px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -141,8 +41,6 @@ nav {
   z-index: 10;
 }
 
-/* --- Media Queries ---*/
-/*small screens*/
 @media screen and (max-width: 699px) {
   .curtain {
     position: fixed;
@@ -182,7 +80,7 @@ nav {
     display: block;
     margin-right: 30px;
     margin-top: -15px;
-    color: #ffa69e;
+    color: $secondary-color;
   }
   nav .links {
     display: none;
@@ -213,10 +111,6 @@ nav {
   label {
     display: none;
   }
-  form input,
-  form label {
-    display: inline-block;
-  }
   .curtain {
     display: none;
   }
@@ -236,14 +130,14 @@ nav {
     border-radius: 8px;
   }
   ul .btn {
-    background-color: #ffa69e;
+    background-color: $accent-color;
     color: white;
     padding: 15px 15px;
     font-weight: bold;
     border-radius: 10px;
   }
   ul a:active {
-    color: #ffa69e;
+    color: $secondary-color;
     background-color: white;
   }
   .aboutus {
@@ -260,20 +154,56 @@ nav {
     color: white;
   }
   ul .btn {
-    background-color: #ffa69e;
+    background-color: $accent-color;
     color: white;
     padding: 15px 15px;
     font-weight: bold;
     border-radius: 10px;
   }
   ul a:hover {
-    color: #ffa69e;
+    color: $secondary-color;
     background-color: white;
     padding: 15px;
     border-radius: 10px;
   }
   ul .btn:hover {
-    background-color: #ffa69e;
+    background-color: $secondary-color;
     color: white;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
+footer {
+  margin-top: auto;
+  background-color: #04b2e2;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.trademark {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #b3b3b3;
+  background-color: #04b2e2;
+}
+
+.disclosure {
+  font-size: 0.8rem;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.4;
+  margin-top: 5px;
+  background-color: #04b2e2;
+}

@@ -12,7 +12,8 @@ body {
   margin: 0;
   padding: 0;
   color: $dark-blue;
-  font-family: $font1;}
+  font-family: $font1;
+}
 
 header {
   text-align: center;
@@ -23,7 +24,9 @@ header {
 
   h1 {
     margin: 0;
-    padding: 0;}}
+    padding: 0;
+  }
+}
 
 // HOUSE SECTION
 .house-container {
@@ -35,7 +38,8 @@ header {
   .house-img {
     width: 100%;
     border-radius: 20px;
-    display: block;}
+    display: block;
+  }
 
   .overlay-content {
     position: absolute;
@@ -47,7 +51,8 @@ header {
     align-items: center;
     gap: 1rem;
     color: $white;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+  }
 
   .donate-here {
     background-color: $pink;
@@ -56,7 +61,9 @@ header {
     padding: 0.7rem 1.5rem;
     border-radius: 10px;
     font-weight: bold;
-    text-decoration: none;}}
+    text-decoration: none;
+  }
+}
 
 // MISSION
 .mission {
@@ -71,7 +78,9 @@ header {
     border-radius: 10px;
     color: $dark-blue;
     text-decoration: none;
-    font-weight: bold;}}
+    font-weight: bold;
+  }
+}
 
 // BOTTOM IMAGES
 .bottom-images {
@@ -86,29 +95,35 @@ header {
     gap: 1rem;
 
     img {
-      width: 100%; 
+      width: 100%;
       max-width: 200px;
       border-radius: 10px;
-      margin: 5px 5px 5px 10px;}
+      margin: 5px 5px 5px 10px;
+    }
 
     .desc {
       font-family: $font2;
       text-transform: uppercase;
       font-weight: bold;
       color: $dark-blue;
-      max-width: 300px;}}}
+      max-width: 300px;
+    }
+  }
+}
 
 //INFO SECTION
 .info-title {
   margin-left: 10px;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
-// LOGO 
+// LOGO
 .logo {
   display: block;
   margin: 20px auto;
-  width: 50%;  
-  height: auto;}
+  width: 50%;
+  height: auto;
+}
 
 // NEWSLETTER FORM
 .newsletter {
@@ -122,7 +137,8 @@ header {
       border-radius: 10px;
       padding: 0.5rem;
       width: 20ch;
-      border: none;}
+      border: none;
+    }
 
     button {
       margin-left: 10px;
@@ -131,31 +147,87 @@ header {
       border-radius: 10px;
       background-color: $pink;
       color: $dark-blue;
-      cursor: pointer;}}}
+      cursor: pointer;
+    }
+  }
+}
 
 // MEDIA QUERIES
 //TABLET
 @media screen and (min-width: 321px) and (max-width: 768px) {
-  h1 {font-size: 3.5rem;}
-  .donate-here {font-size: 2rem;
-    opacity: 95%;}
-  .mission {font-size: 1.5rem;}
+  h1 {
+    font-size: 3.5rem;
+  }
+  .donate-here {
+    font-size: 2rem;
+    opacity: 95%;
+  }
+  .mission {
+    font-size: 1.5rem;
+  }
 
   .bottom-images .image-item img {
     max-width: 50%;
     height: auto;
-    margin: 20px 5px 0 30px;}}
-  .desc {font-size: 1.5rem;}
-  .info-title {font-size: 2rem;}
-
+    margin: 20px 5px 0 30px;
+  }
+}
+.desc {
+  font-size: 1.5rem;
+}
+.info-title {
+  font-size: 2rem;
+}
 
 //DESKTOP
 @media screen and (min-width: 769px) {
-  .mission {font-size: 5rem;}
+  .mission {
+    font-size: 5rem;
+  }
 
   .bottom-images .image-item img {
     max-width: 50%;
-    height: auto;}
-  
+    height: auto;
+  }
+
   .logo {
-    width: 150px;}}
+    width: 150px;
+  }
+}
+
+footer {
+  margin-top: auto;
+  background-color: #04b2e2;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.trademark {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #b3b3b3;
+  background-color: #04b2e2;
+}
+
+.disclosure {
+  font-size: 0.8rem;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.4;
+  margin-top: 5px;
+  background-color: #04b2e2;
+}
