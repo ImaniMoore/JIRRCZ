@@ -3,6 +3,7 @@ body {
   padding: 0;
   color: #003260;
   font-family: "DM Serif Display", serif;
+  background: linear-gradient(to bottom, #ffffff, #e8faff, #ffe3e3);
 }
 
 header {
@@ -12,6 +13,26 @@ header {
   color: #003260;
   font-size: 1.2rem;
   background-color: #04b2e2;
+  animation: colorCycle 15s linear infinite;
+}
+
+@keyframes colorCycle {
+  0% {
+    color: #ffffff;
+  }
+  33% {
+    color: #003260;
+  }
+  66% {
+    color: #ffa69e;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+header h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .house-container {
@@ -40,12 +61,17 @@ header {
 .house-container .donate-here {
   background-color: #ffa69e;
   color: #ffffff;
+  font-size: 1rem;
   border: none;
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
   opacity: 95%;
+}
+.house-container .donate-here:hover {
+  color: #ffa69e;
+  background-color: #ffffff;
 }
 
 .mission {
@@ -61,6 +87,9 @@ header {
   color: #003260;
   text-decoration: none;
   font-weight: bold;
+}
+.mission .mission-btn:hover {
+  color: #ffffff;
 }
 
 .bottom-images {
@@ -106,23 +135,46 @@ header {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #003260;
+}
+a:visited {
+  color: #003260;
+}
+a:hover {
+  color: #ffa69e;
+}
+
 @media screen and (min-width: 321px) and (max-width: 768px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
+  }
+  .house-img {
+    max-width: 85%;
+    margin: 0 auto;
   }
   .donate-here {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .mission {
     font-size: 1.5rem;
   }
-  .bottom-images .image-item img {
-    max-width: 70%;
-    height: auto;
-    margin: 20px 5px 0 30px;
+  .bottom-images .image-item.left {
+    flex-direction: row;
+    text-align: left;
   }
-  .desc, .desc a {
-    font-size: 2rem;
+  .bottom-images .image-item.right {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .bottom-images .image-item img {
+    max-width: 50%;
+    height: auto;
+  }
+  .desc,
+  .desc a {
+    font-size: 1rem;
   }
   .info-title {
     font-size: 1.5rem;
@@ -134,16 +186,34 @@ header {
 }
 @media screen and (min-width: 769px) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+  }
+  .house-img {
+    max-width: 80%;
+    margin: 0 auto;
   }
   .donate-here {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .mission {
     font-size: 2rem;
   }
+  .bottom-images .image-item.left {
+    flex-direction: row;
+    text-align: left;
+  }
+  .bottom-images .image-item.right {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .bottom-images .image-item.right {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+  }
   .bottom-images .image-item img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
   }
   .desc a {
@@ -155,8 +225,5 @@ header {
   }
   .logo {
     width: 200px;
-  }
-  .newsletter {
-    font-size: 2rem;
   }
 }

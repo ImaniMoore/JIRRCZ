@@ -1,8 +1,10 @@
 // VARIABLES
 $white: #ffffff;
 $light-blue: #04b2e2;
+$lighter-blue: #e8faff;
 $dark-blue: #003260;
 $pink: #ffa69e;
+$lighter-pink: #ffe3e3;
 $black: #000000;
 $font1: "DM Serif Display", serif;
 $font2: "Playfair Display", sans-serif;
@@ -12,7 +14,9 @@ body{
   margin: 0;
   padding: 0;
   color: $dark-blue;
-  font-family: $font1;}
+  font-family: $font1;
+  background: linear-gradient(to bottom, $white,$lighter-blue, $lighter-pink);
+}
 
 header {
   text-align: center;
@@ -20,7 +24,21 @@ header {
   padding: 0;
   color: $dark-blue;
   font-size: 1.2rem;
-  background-color: $light-blue;}
+  background-color: $light-blue;
+  animation:
+  colorCycle 15s linear infinite;}
+
+// Color change cycle
+@keyframes colorCycle {
+  0%   { color: $white; }
+  33%  { color: $dark-blue; }
+  66%  { color: $pink; }
+  100% { color: $white; }}
+
+header h1 {
+  margin: 0;
+  padding: 0;} // removed the white space above the header
+  
 
 // HOUSE SECTION
 .house-container {
@@ -49,12 +67,17 @@ header {
   .donate-here {
     background-color: $pink;
     color: $white;
+    font-size: 1rem;
     border: none;
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
-    opacity: 95%;}}
+    opacity: 95%;
+  &:hover {
+    color:$pink;
+    background-color: $white;}}
+  }
 
 // MISSION
 .mission {
@@ -69,7 +92,10 @@ header {
     border-radius: 10px;
     color: $dark-blue;
     text-decoration: none;
-    font-weight: bold;}}
+    font-weight: bold;
+   &:hover {
+    color:$white;}}
+  }
 
 // BOTTOM IMAGES
 .bottom-images {
@@ -114,21 +140,47 @@ header {
   width: 50%;  
   height: auto;}
 
+// LINK STYLES
+a {
+  text-decoration: none;
+  color: $dark-blue;
+  
+  &:visited {
+    color: $dark-blue;}
+
+  &:hover {
+    color: $pink;}}
+
+
 // MEDIA QUERIES
 //TABLET
 @media screen and (min-width: 321px) and (max-width: 768px) {
-  header h1 {font-size: 2rem;}
+  header h1 {font-size: 2.8rem;}
 
-  .donate-here {font-size: 2rem;}
+  .house-img {
+    max-width: 85%;
+    margin: 0 auto;}
+
+
+  .donate-here {font-size: 1.5rem;}
 
   .mission {font-size: 1.5rem;}
 
-  .bottom-images .image-item img {
-    max-width: 70%;
-    height: auto;
-    margin: 20px 5px 0 30px;}
+  // Bottom images: alternate left and right
+  .bottom-images .image-item.left {
+    flex-direction: row;    // image left, text right
+    text-align: left;}
 
-  .desc, .desc a {font-size: 2rem;}
+  .bottom-images .image-item.right {
+    flex-direction: row-reverse; // image right, text left
+    text-align: right;}
+
+  .bottom-images .image-item img {
+    max-width: 50%;
+    height: auto;}
+
+  .desc,
+  .desc a {font-size: 1rem;}
 
   .info-title {font-size: 1.5rem;}
 
@@ -138,22 +190,45 @@ header {
 
 //DESKTOP
 @media screen and (min-width: 769px) {
-header h1{font-size: 2.5rem;}
+  header h1 {
+    font-size: 4rem;}
 
-.donate-here{font-size: 2.5rem;}
+  .house-img {
+    max-width: 80%;
+    margin: 0 auto;}
 
-  .mission {font-size: 2rem;}
+  .donate-here {
+    font-size: 2rem;}
+
+  .mission {
+    font-size: 2rem;}
+
+// Bottom images: alternate left and right
+  .bottom-images .image-item.left {
+    flex-direction: row;    // image left, text right
+    text-align: left;}
+
+  .bottom-images .image-item.right {
+    flex-direction: row-reverse; // image right, text left
+    text-align: right;}
+
+.bottom-images .image-item.right {
+  flex-direction: row-reverse; // image right, text left
+  align-items: flex-start;
+  text-align: left;
+  gap: 2rem;}
+
 
   .bottom-images .image-item img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;}
-  
-    .desc a{font-size: 2rem;}
 
-.info-title{font-size: 3rem;
-  margin-left: 20px;}
+  .desc a {
+    font-size: 2rem;}
+
+  .info-title {
+    font-size: 3rem;
+    margin-left: 20px;}
 
   .logo {
-    width: 200px;}
-  
-  .newsletter {font-size: 2rem;}}
+    width: 200px;}}
