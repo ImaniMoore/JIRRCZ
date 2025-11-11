@@ -6,11 +6,37 @@ body {
   background: linear-gradient(to bottom, #ffffff, #e8faff, #ffe3e3);
 }
 
-main > h1 {
+.main-title {
   text-align: center;
   background-color: #04b2e2;
-<<<<<<< HEAD
+  margin: 0;
+}
+
+/*--- Navigation Bar ---*/
+header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: #04b2e2;
+  z-index: 1;
+}
+
+.header-logo img {
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 1.2rem;
+  background-color: #04b2e2;
   animation: colorCycle 15s linear infinite;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 @keyframes colorCycle {
@@ -30,34 +56,6 @@ main > h1 {
 header h1 {
   margin: 0;
   padding: 0;
-=======
-  margin: 0;
-}
-
-/*--- Navigation Bar ---*/
-header {
-  height: 100px;
-  position: sticky;
-  top: 0;
-  background-color: #04b2e2;
-  z-index: 1;
-}
-
-.header-logo img {
-  height: 90px;
-  width: auto;
-  border-radius: 50%;
-  margin: 5px;
-  font-size: 1.2rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 10;
->>>>>>> e7705272c9029be23ee6836cf26605b3db2407f7
 }
 
 .house-container {
@@ -171,6 +169,17 @@ a:hover {
   color: #ffa69e;
 }
 
+a {
+  text-decoration: none;
+  color: #003260;
+}
+a:visited {
+  color: #003260;
+}
+a:hover {
+  color: #ffa69e;
+}
+
 @media screen and (min-width: 321px) and (max-width: 768px) {
   header h1 {
     font-size: 2.8rem;
@@ -189,7 +198,14 @@ a:hover {
     flex-direction: row;
     text-align: left;
   }
-<<<<<<< HEAD
+  .bottom-images .image-item.right {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  .bottom-images .image-item.left {
+    flex-direction: row;
+    text-align: left;
+  }
   .bottom-images .image-item.right {
     flex-direction: row-reverse;
     text-align: right;
@@ -201,11 +217,6 @@ a:hover {
   .desc,
   .desc a {
     font-size: 1rem;
-=======
-  .desc,
-  .desc a {
-    font-size: 2rem;
->>>>>>> e7705272c9029be23ee6836cf26605b3db2407f7
   }
   .info-title {
     font-size: 1.5rem;
@@ -256,12 +267,6 @@ a:hover {
   }
   .logo {
     width: 200px;
-  }
-<<<<<<< HEAD
-}
-=======
-  .newsletter {
-    font-size: 2rem;
   }
 }
 /*small screens*/
@@ -425,4 +430,3 @@ footer a {
   margin-top: 5px;
   background-color: #04b2e2;
 }/*# sourceMappingURL=homepage.css.map */
->>>>>>> e7705272c9029be23ee6836cf26605b3db2407f7
