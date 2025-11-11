@@ -12,24 +12,44 @@
 <body>
   <header>
     <nav>
-      Nav Bar content here...
+      <div class="logo">
+        <img src="logo.jpg" alt="CRIZ Logo">
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <ul class="links">
+        <li><a href="../home/homepage.html">Home</a></li>
+        <li><a href="../mission/mission.html">Our Mission</a></li>
+        <li><a href="../AboutUs/About.html">Meet the Team</a></li>
+        <li><a href="../Contact/contact.html">Contact Us</a></li>
+        <li><a href="../donate/donate.html" class="btn">Donate</a></li>
+      </ul>
+      <div class="curtain" id="mobileCurtain">
+        <nav class="curtain-menu">
+          <a href="../home/homepage.html">Home</a>
+          <a href="../mission/mission.html">Our Mission</a>
+          <a href="../AboutUs/About.html">Meet the Team</a>
+          <a href="../Contact/contact.html">Contact Us</a>
+          <a href="../donate/donate.html">Donate</a>
+        </nav>
+      </div>
     </nav>
   </header>
 
   <section class="mission-sec">
-    <h1 class="mission-sec__title">About CIRZ</h1>
+    <h1 class="mission-sec__title">About CRIZ</h1>
     <p class="mission-sec__subtitle">Hope begins with shelter</p>
     <img class="mission-sec__img" src="../assets/donation.jpg" alt="donation image"/>
 
-    <div class="mission-sec__info">
+      <div class="mission-sec__info">
         <h2>Our Mission</h2>
         <p>
-          At CIRZ, our mission is to ensure that every individual and family has access to safe, stable, and affordable housing. 
+          At CRIZ, our mission is to ensure that every individual and family has access to safe, stable, and affordable housing. 
           We work to break the cycle of housing insecurity by connecting people with resources, advocating for equitable housing policies, 
           and building partnerships that create sustainable solutions. Our goal is simple yet urgent: to make housing a human right, not a privilege.
         </p>
     </div>
-    <div class="mission-sec__info mission-sec__info--row mission-sec__info--color-block">
+    <div class="mission-sec__info mission-sec__info--row mission-sec__info--color-block" id="second-mission-block">
       <div class="mission-block">
         <h2>Our Story</h2>
         <img src="../assets/volunteer.jpg" class="mission-block__img"/>
@@ -50,7 +70,7 @@
         and challenging systems that perpetuate inequality, we aim to create a world where safe and stable homes are accessible to all, regardless of income or circumstance.
       </p>
     </div>
-    <div class="mission-sec__info mission-sec__info--row mission-sec__info--color-block" id="last-mission-block">
+    <div class="mission-sec__info mission-sec__info--row mission-sec__info--color-block">
       <div class="mission-block">
         <h2>Our Values</h2>
         <img src="../assets/family-img.jpg" class="mission-block__img"/>
@@ -64,9 +84,17 @@
     </div>
   </section>
 
-  <footer>
-    <p>Footer content here...</p>
-  </footer>
-  <script src="mission.js"></script>
-</body>
+    <footer>
+      <a href="../Contact/contact.html"><div>Contact Us</div></a>
+      <a href="../FAQs/faqs.html"><div>FAQs</div></a>
+      <a><div>Privacy Policy</div></a>
+      <a href="#"><div>Terms of Use</div></a>
+      <div class="trademark">Copyright © 2025 CRIZ. All rights reserved.</div>
+      <div class="disclosure">
+        CRIZ is a student project for educational purposes and is not a
+        registered nonprofit organization.
+      </div>
+    </footer>
+    <script src="mission.js"></script>
+  </body>
 </html>

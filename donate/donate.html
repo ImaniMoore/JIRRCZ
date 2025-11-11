@@ -12,7 +12,27 @@
 <body>
   <header>
     <nav>
-      Nav Bar content here...
+      <div class="logo">
+        <img src="../assets/logo.jpg" alt="CRIZ Logo">
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <ul class="links">
+        <li><a href="../home/homepage.html">Home</a></li>
+        <li><a href="../mission/mission.html">Our Mission</a></li>
+        <li><a href="../AboutUs/About.html">Meet the Team</a></li>
+        <li><a href="../Contact/contact.html">Contact Us</a></li>
+        <li><a href="../donate/donate.html" class="btn">Donate</a></li>
+      </ul>
+      <div class="curtain" id="mobileCurtain">
+        <nav class="curtain-menu">
+          <a href="../home/homepage.html">Home</a>
+          <a href="../mission/mission.html">Our Mission</a>
+          <a href="../AboutUs/About.html">Meet the Team</a>
+          <a href="../Contact/contact.html">Contact Us</a>
+          <a href="../donate/donate.html">Donate</a>
+        </nav>
+      </div>
     </nav>
   </header>
 
@@ -23,7 +43,7 @@
         <h1 class="get-involved__title">Get Involved</h1>
         <img src="../assets/family.jpg"/>
         <p class="get-involved__info">
-          At CIRZ, volunteers are the heart of everything we do. 
+          At CRIZ, volunteers are the heart of everything we do. 
           Every day, their generosity helps provide food, clothing, 
           essential supplies, and a sense of belonging to neighbors experiencing 
           housing insecurity. By volunteering with us, you’re not just lending a 
@@ -40,7 +60,7 @@
           Each donation, big or small, helps someone take a vital step forwards.
           Thank you for choosing to donate today.
         </p>
-        <form class="donation-form" method="post">
+        <form class="donation-form" id="donation-form" method="post">
           <div class="donation-form__type-btn">
             <button class="donate-btn donation-freq donate-btn--selected" type="button">Give Once</button>
             <button class="donate-btn donation-freq" type="button">Give Recurring</button>
@@ -76,18 +96,25 @@
       </section>
     </section>
 
-    <section class="reach-out">
-      <h3 class="reach-out__title">Want to ask a question?</h3>
-      <p class="reach-out__sub-info">Complete our contact form.</p>
-      <!-- UPDATE A TAG WITH HREF -->
-      <a class="reach-out__con-btn">Contact Us</a>
-    </section>
-  </main>
+      <section class="reach-out">
+        <h3 class="reach-out__title">Want to ask a question?</h3>
+        <p class="reach-out__sub-info">Complete our contact form.</p>
+        <!-- UPDATE A TAG WITH HREF -->
+        <a class="reach-out__con-btn">Contact Us</a>
+      </section>
+    </main>
+    <footer>
+      <a href="../Contact/contact.html"><div>Contact Us</div></a>
+      <a href="../FAQs/faqs.html"><div>FAQs</div></a>
+      <a><div>Privacy Policy</div></a>
+      <a href="#"><div>Terms of Use</div></a>
+      <div class="trademark">Copyright © 2025 CRIZ. All rights reserved.</div>
+      <div class="disclosure">
+        CRIZ is a student project for educational purposes and is not a
+        registered nonprofit organization.
+      </div>
+    </footer>
 
-  <footer>
-    <p>Footer content here...</p>
-  </footer>
-
-  <script src="donate.js"></script>
-</body>
+    <script src="donate.js"></script>
+  </body>
 </html>

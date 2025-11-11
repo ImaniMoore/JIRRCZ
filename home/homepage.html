@@ -8,15 +8,38 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <h1>Hope begins with Shelter</h1>
-  </header>
+        <nav>
+            <div class="header-logo">
+                <img src="../assets/logo.jpg" alt="CRIZ Logo">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul class="links">
+                <li><a href="../home/homepage.html">Home</a></li>
+                <li><a href="../mission/mission.html">Our Mission</a></li>
+                <li><a href="../AboutUs/About.html">Meet the Team</a></li>
+                <li><a href="../Contact/contact.html">Contact Us</a></li>
+                <li><a href="../donate/donate.html" class="btn">Donate</a></li>
+            </ul>
+            <div class="curtain" id="mobileCurtain">
+                <nav class="curtain-menu">
+                    <a href="../home/homepage.html">Home</a>
+                    <a href="../mission/mission.html">Our Mission</a>
+                    <a href="../AboutUs/About.html">Meet the Team</a>
+                    <a href="../Contact/contact.html">Contact Us</a>
+                    <a href="../donate/donate.html">Donate</a>
+                </nav>
+            </div>
+            
+        </nav>
+    </header>
   
   <main>
+    <h1>Hope begins with Shelter</h1>
     <!-- House Section -->
     <section class="house-container">
-      <img class="house-img" src="/criz-folder/CRIZ/assets/housing.png" alt="A house">
+      <img class="house-img" src="../assets/housing.png" alt="A house">
       <div class="overlay-content">
 
         <a class="donate-here" href="/criz-folder/CRIZ/donate/donate.html">DONATE TO CRIZ</a>
@@ -30,41 +53,51 @@
         At CRIZ non-profit, we’re dedicated to making safe and affordable housing a reality for everyone.
         Learn more about our mission.
       </p>
-      <a class="mission-btn" href="/criz-folder/CRIZ/mission/mission.html">OUR MISSION</a>
+      <a class="mission-btn" href="../mission/mission.html">OUR MISSION</a>
     </section>
 
     <!-- Bottom Images -->
     <section class="bottom-images">
       <div class="image-item left">
-        <img src="/criz-folder/CRIZ/assets/team.png" alt="Our team">
-        <p class="desc"><a href="/criz-folder/CRIZ/AboutUs/About.html">Meet the amazing team behind CRIZ.</a></p>
+        <img src="../assets/team.png" alt="Our team">
+        <p class="desc"><a href="../AboutUs/About.html">Meet the amazing team behind CRIZ.</a></p>
       </div>
 
       <div class="image-item right">
-        <img src="/criz-folder/CRIZ/assets/funds.png" alt="Fundraising">
-        <p class="desc"><a href="/criz-folder/CRIZ/donate/donate.html">How we raise funds to build safe homes.</a></p>
+        <img src="../assets/funds.png" alt="Fundraising">
+        <p class="desc"><a href="../donate/donate.html">How we raise funds to build safe homes.</a></p>
       </div>
 
       <div class="image-item left">
-        <img src="/criz-folder/CRIZ/assets/phones.png" alt="Contact">
-        <p class="desc"><a href="/criz-folder/CRIZ/Contact/contact.html">Get in touch with us anytime.</a></p>
+        <img src="../assets/phones.png" alt="Contact">
+        <p class="desc"><a href="../Contact/contact.html">Get in touch with us anytime.</a></p>
       </div>
     </section>
 
     <!-- Info-->
     <section class="info-sections">
-      <h2 class="info-title"><a href="/criz-folder/CRIZ/AboutUs/About.html">MEET THE TEAM</a></h2>
+      <h2 class="info-title"><a href="../AboutUs/About.html">MEET THE TEAM</a></h2>
       <hr>
-      <h2 class="info-title"><a href="/criz-folder/CRIZ/Contact/contact.html">CONTACT US</a></h2>
+      <h2 class="info-title"><a href="../Contact/contact.html">CONTACT US</a></h2>
       <hr>
-      <h2 class="info-title"><a href="/criz-folder/CRIZ/donate/donate.html">DONATE</a></h2>
+      <h2 class="info-title"><a href="../donate/donate.html">DONATE</a></h2>
       <hr>
     </section>
 
     <!-- Logo -->
-    <img class="logo" src="/criz-folder/CRIZ/assets/criz.png" alt="CRIZ logo">
+    <img class="logo" src="../assets/criz.png" alt="CRIZ logo">
 
-  </main>
-
-</body>
+    </main>
+    <footer>
+      <a href="../Contact/contact.html"><div>Contact Us</div></a>
+      <a href="../FAQs/faqs.html"><div>FAQs</div></a>
+      <a><div>Privacy Policy</div></a>
+      <a href="#"><div>Terms of Use</div></a>
+      <div class="trademark">Copyright © 2025 CRIZ. All rights reserved.</div>
+      <div class="disclosure">
+        CRIZ is a student project for educational purposes and is not a
+        registered nonprofit organization.
+      </div>
+    </footer>
+  </body>
 </html>

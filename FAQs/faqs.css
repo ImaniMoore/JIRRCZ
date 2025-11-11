@@ -1,27 +1,22 @@
-@keyframes slide-in-right {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 body {
+  text-align: center;
   margin: 0;
-  font-size: 1rem;
+  padding: 0;
   font-family: "Playfair Display", sans-serif;
+}
+
+section div {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+}
+
+header div,
+.logo {
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 
 /*--- Navigation Bar ---*/
@@ -30,7 +25,6 @@ header {
   position: sticky;
   top: 0;
   background-color: #04b2e2;
-  z-index: 1;
 }
 
 .logo img {
@@ -48,108 +42,7 @@ nav {
   z-index: 10;
 }
 
-.mission-sec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.mission-sec__title {
-  color: #04b2e2;
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin: 20px 0 0;
-}
-.mission-sec__subtitle {
-  color: #003260;
-  margin: 0 0 10px;
-  font-size: 2rem;
-}
-.mission-sec__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-.mission-sec__info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  min-height: 400px;
-}
-.mission-sec__info--color-block {
-  background-color: #ffa69e;
-}
-.mission-sec__info h2 {
-  text-transform: uppercase;
-  margin-bottom: 0;
-  font-size: 2rem;
-}
-.mission-sec__info p {
-  font-size: 1.5rem;
-}
-.mission-sec__info h2,
-.mission-sec__info p {
-  padding: 20px;
-}
-
-.mission-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mission-block__img {
-  border-radius: 10px;
-  height: 200px;
-  width: auto;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .mission-sec__info--block {
-    animation: slide-in-left linear;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 30%;
-  }
-  .mission-sec__info--color-block {
-    animation: slide-in-right linear;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: 30%;
-  }
-}
-@media screen and (min-width: 700px) {
-  .mission-sec__img {
-    max-height: 400px;
-  }
-  .mission-block__img {
-    height: 300px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #second-mission-block {
-    animation-range-end: 10%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #second-mission-block {
-    animation-range-end: 30%;
-  }
-  .mission-sec__img {
-    -o-object-position: 50% 75%;
-       object-position: 50% 75%;
-  }
-  .mission-sec__info--row {
-    flex-direction: row;
-  }
-  .mission-sec__info--row p {
-    margin: 0 10px;
-  }
-  .mission-sec__info p {
-    width: 60%;
-  }
-}
+/* --- Nav Bar Media Queries ---*/
 /*small screens*/
 @media screen and (max-width: 699px) {
   .curtain {
@@ -221,6 +114,10 @@ nav {
   label {
     display: none;
   }
+  form label,
+  form input {
+    display: inline-block;
+  }
   .curtain {
     display: none;
   }
@@ -249,6 +146,12 @@ nav {
   ul a:active {
     color: #003260;
     background-color: white;
+  }
+  .aboutus {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 /* Desktops */
@@ -294,14 +197,20 @@ footer a {
 
 .trademark {
   font-size: 0.9rem;
+  padding: 0;
+  margin: 0 auto;
   margin-top: 10px;
   color: #b3b3b3;
+  background-color: #04b2e2;
 }
 
 .disclosure {
   font-size: 0.8rem;
   color: white;
   max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
   line-height: 1.4;
   margin-top: 5px;
-}/*# sourceMappingURL=mission.css.map */
+  background-color: #04b2e2;
+}/*# sourceMappingURL=faqs.css.map */
