@@ -12,7 +12,7 @@ $accent-color: #ffa69e;
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 1rem;
   color: $text-color;
 }
@@ -96,6 +96,7 @@ p {
     display: center;
   }
 }
+/*-- FOOTER */
 footer {
   margin-top: auto;
   background-color: #04b2e2;
@@ -126,7 +127,7 @@ footer a {
   line-height: 1.4;
   margin-top: 5px;
 }
-
+/*--- Navigation Bar ---*/
 header {
   height: 100px;
   position: sticky;
@@ -146,7 +147,7 @@ nav {
   position: relative;
   z-index: 10;
 }
-/* --- Media Queries ---*/
+/* --- Nav Bar Media Queries ---*/
 /*small screens*/
 @media screen and (max-width: 699px) {
   .curtain {
@@ -218,8 +219,9 @@ nav {
   label {
     display: none;
   }
-  form input,
-  form label {
+
+  form label,
+  form input {
     display: inline-block;
   }
   .curtain {
@@ -280,5 +282,72 @@ nav {
   ul .btn:hover {
     background-color: $secondary-color;
     color: white;
+  }
+}
+
+// Small screens (mobile)
+@media screen and (max-width: 699px) {
+  p {
+    font-size: $mediumfont;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-form,
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  input[type="submit"] {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+// Medium screens (tablets)
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+  p {
+    font-size: $largefont;
+  }
+
+  .contact-title {
+    font-size: 2.3rem;
+  }
+
+  .contact-form,
+  .container {
+    width: 85%;
+    max-width: 700px;
+    padding: 30px 40px;
+  }
+}
+
+// Large screens (desktops)
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 22px;
+  }
+
+  .contact-title {
+    font-size: 3rem;
+  }
+
+  .contact-form,
+  .container {
+    max-width: 800px;
+    padding: 40px 50px;
+  }
+
+  input[type="submit"] {
+    font-size: 1.3rem;
+    padding: 18px;
   }
 }

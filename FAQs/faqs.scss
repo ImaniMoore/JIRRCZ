@@ -7,9 +7,9 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
-div {
+section div {
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
@@ -21,6 +21,7 @@ header div,
   margin: 0;
   background: none;
 }
+/*--- Navigation Bar ---*/
 header {
   height: 100px;
   position: sticky;
@@ -40,7 +41,8 @@ nav {
   position: relative;
   z-index: 10;
 }
-
+/* --- Nav Bar Media Queries ---*/
+/*small screens*/
 @media screen and (max-width: 699px) {
   .curtain {
     position: fixed;
@@ -111,6 +113,11 @@ nav {
   label {
     display: none;
   }
+
+  form label,
+  form input {
+    display: inline-block;
+  }
   .curtain {
     display: none;
   }
@@ -171,6 +178,7 @@ nav {
     color: white;
   }
 }
+
 footer {
   margin-top: auto;
   background-color: #04b2e2;
