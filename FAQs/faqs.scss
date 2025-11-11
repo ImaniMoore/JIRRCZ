@@ -1,131 +1,25 @@
-// VARIABLES
 $primary-color: #04b2e2;
-$secondary-color: #ffa69e;
-$text-color: #333;
-$border-color: #a6a5a5;
+$secondary-color: #003260;
 $btn-text-color: #fff;
-$background-light: #f9f9f9;
-$largefont: 20px;
-$mediummfont: 15px;
-$smallfont: 10px;
+$border-color: rgb(166, 165, 165);
 $accent-color: #ffa69e;
-
 body {
+  text-align: center;
   margin: 0;
+  padding: 0;
   font-family: "Playfair Display", sans-serif;
-  font-size: 1rem;
-  color: $text-color;
 }
-
-p {
-  font-size: $largefont;
-  color: $secondary-color;
-  text-align: center;
+section div {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
 }
-.contact-title {
-  text-align: center;
-  color: $primary-color;
-  font-size: 2.5rem;
-  margin-top: 30px;
-}
-
-.contact-form,
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  max-width: 600px;
-  background-color: $background-light;
-  padding: 25px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  margin: 30px auto;
-
-  .radio {
-    color: $primary-color;
-    justify-content: center;
-    display: grid;
-    font-size: $smallfont;
-  }
-
-  label {
-    font-weight: 550;
-    margin-top: 10px;
-  }
-
-  input,
-  textarea {
-    border: 1px solid $border-color;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 1rem;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  input[type="radio"] {
-    margin-right: 8px;
-    accent-color: $primary-color;
-  }
-
-  textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-
-  .options {
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: $primary-color;
-    justify-content: center;
-    display: flex;
-  }
-
-  input[type="submit"] {
-    background-color: $primary-color;
-    color: $btn-text-color;
-    border: round;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 15px;
-  }
-  section {
-    justify-content: center;
-    display: center;
-  }
-}
-/*-- FOOTER */
-footer {
-  margin-top: auto;
-  background-color: #04b2e2;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-.trademark {
-  font-size: 0.9rem;
-  margin-top: 10px;
-  color: #b3b3b3;
-}
-
-.disclosure {
-  font-size: 0.8rem;
-  color: white;
-  max-width: 600px;
-  line-height: 1.4;
-  margin-top: 5px;
+header div,
+.logo {
+  padding: 0;
+  margin: 0;
+  background: none;
 }
 /*--- Navigation Bar ---*/
 header {
@@ -285,69 +179,39 @@ nav {
   }
 }
 
-// Small screens (mobile)
-@media screen and (max-width: 699px) {
-  p {
-    font-size: $mediumfont;
-  }
-
-  .contact-title {
-    font-size: 2rem;
-  }
-
-  .contact-form,
-  .container {
-    width: 95%;
-    padding: 20px;
-  }
-
-  input,
-  textarea {
-    font-size: 0.9rem;
-  }
-
-  input[type="submit"] {
-    font-size: 1rem;
-    padding: 12px;
-  }
+footer {
+  margin-top: auto;
+  background-color: #04b2e2;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-// Medium screens (tablets)
-@media screen and (min-width: 700px) and (max-width: 1199px) {
-  p {
-    font-size: $largefont;
-  }
-
-  .contact-title {
-    font-size: 2.3rem;
-  }
-
-  .contact-form,
-  .container {
-    width: 85%;
-    max-width: 700px;
-    padding: 30px 40px;
-  }
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
-// Large screens (desktops)
-@media screen and (min-width: 1200px) {
-  p {
-    font-size: 22px;
-  }
+.trademark {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #b3b3b3;
+  background-color: #04b2e2;
+}
 
-  .contact-title {
-    font-size: 3rem;
-  }
-
-  .contact-form,
-  .container {
-    max-width: 800px;
-    padding: 40px 50px;
-  }
-
-  input[type="submit"] {
-    font-size: 1.3rem;
-    padding: 18px;
-  }
+.disclosure {
+  font-size: 0.8rem;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.4;
+  margin-top: 5px;
+  background-color: #04b2e2;
 }

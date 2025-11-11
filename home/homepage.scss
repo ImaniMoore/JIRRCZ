@@ -8,11 +8,12 @@ $font1: "DM Serif Display", serif;
 $font2: "Playfair Display", sans-serif;
 
 // BASE STYLES
-body{
+body {
   margin: 0;
   padding: 0;
   color: $dark-blue;
-  font-family: $font1;}
+  font-family: $font1;
+}
 
 main > h1 {
   text-align: center;
@@ -20,28 +21,27 @@ main > h1 {
   margin: 0;
 }
 
-
 /*--- Navigation Bar ---*/
 header {
-    height: 100px;
-    position: sticky;
-    top: 0;
-    background-color: $light-blue;
-    z-index: 1;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background-color: $light-blue;
+  z-index: 1;
 }
 .header-logo img {
-    height: 90px;
-    width: auto;
-    border-radius: 50%;
-    margin: 5px;
-    font-size: 1.2rem;
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 1.2rem;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 // HOUSE SECTION
 .house-container {
@@ -53,7 +53,8 @@ nav {
   .house-img {
     width: 100%;
     border-radius: 20px;
-    display: block;}
+    display: block;
+  }
 
   .overlay-content {
     position: absolute;
@@ -65,7 +66,8 @@ nav {
     align-items: center;
     gap: 1rem;
     color: $white;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+  }
 
   .donate-here {
     background-color: $pink;
@@ -75,7 +77,9 @@ nav {
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
-    opacity: 95%;}}
+    opacity: 95%;
+  }
+}
 
 // MISSION
 .mission {
@@ -90,7 +94,9 @@ nav {
     border-radius: 10px;
     color: $dark-blue;
     text-decoration: none;
-    font-weight: bold;}}
+    font-weight: bold;
+  }
+}
 
 // BOTTOM IMAGES
 .bottom-images {
@@ -109,10 +115,11 @@ nav {
     gap: 1rem;
 
     img {
-      width: 100%; 
+      width: 100%;
       max-width: 200px;
       border-radius: 10px;
-      margin: 5px;}
+      margin: 5px;
+    }
 
     .desc {
       font-family: $font2;
@@ -121,63 +128,97 @@ nav {
       font-size: 1rem;
       text-align: center;
       color: $dark-blue;
-      max-width: 200px;}}}
+      max-width: 200px;
+    }
+  }
+}
 
 //INFO SECTION
 .info-title {
   margin-left: 10px;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
-// LOGO 
+// LOGO
 .logo {
   display: block;
   margin: 20px auto;
-  width: 50%;  
-  height: auto;}
+  width: 50%;
+  height: auto;
+}
 
 // MEDIA QUERIES
 //TABLET
 @media screen and (min-width: 321px) and (max-width: 768px) {
-  header h1 {font-size: 2rem;}
+  header h1 {
+    font-size: 2rem;
+  }
 
-  .donate-here {font-size: 2rem;}
+  .donate-here {
+    font-size: 2rem;
+  }
 
-  .mission {font-size: 1.5rem;}
+  .mission {
+    font-size: 1.5rem;
+  }
 
   .bottom-images .image-item img {
     max-width: 70%;
     height: auto;
-    margin: 20px 5px 0 30px;}
+    margin: 20px 5px 0 30px;
+  }
 
-  .desc, .desc a {font-size: 2rem;}
+  .desc,
+  .desc a {
+    font-size: 2rem;
+  }
 
-  .info-title {font-size: 1.5rem;}
+  .info-title {
+    font-size: 1.5rem;
+  }
 
-  .logo {max-width: 50%;
-  height: auto;}}
-
+  .logo {
+    max-width: 50%;
+    height: auto;
+  }
+}
 
 //DESKTOP
 @media screen and (min-width: 769px) {
-header h1{font-size: 2.5rem;}
+  header h1 {
+    font-size: 2.5rem;
+  }
 
-.donate-here{font-size: 2.5rem;}
+  .donate-here {
+    font-size: 2.5rem;
+  }
 
-  .mission {font-size: 2rem;}
+  .mission {
+    font-size: 2rem;
+  }
 
   .bottom-images .image-item img {
     max-width: 70%;
-    height: auto;}
-  
-    .desc a{font-size: 2rem;}
+    height: auto;
+  }
 
-.info-title{font-size: 3rem;
-  margin-left: 20px;}
+  .desc a {
+    font-size: 2rem;
+  }
+
+  .info-title {
+    font-size: 3rem;
+    margin-left: 20px;
+  }
 
   .logo {
-    width: 200px;}
-  
-  .newsletter {font-size: 2rem;}}
+    width: 200px;
+  }
+
+  .newsletter {
+    font-size: 2rem;
+  }
+}
 
 // Nav Bar Media Queries
 /*small screens*/
@@ -221,7 +262,6 @@ header h1{font-size: 2.5rem;}
     margin-right: 30px;
     margin-top: -15px;
     color: $dark-blue;
-  
   }
   nav .links {
     display: none;
@@ -281,7 +321,6 @@ header h1{font-size: 2.5rem;}
     color: $dark-blue;
     background-color: white;
   }
-    
 }
 /* Desktops */
 @media screen and (min-width: 1200px) {
@@ -306,4 +345,41 @@ header h1{font-size: 2.5rem;}
     background-color: $dark-blue;
     color: white;
   }
+}
+
+footer {
+  margin-top: auto;
+  background-color: #04b2e2;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.trademark {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #b3b3b3;
+  background-color: #04b2e2;
+}
+
+.disclosure {
+  font-size: 0.8rem;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.4;
+  margin-top: 5px;
+  background-color: #04b2e2;
 }

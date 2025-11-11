@@ -3,11 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:opsz@6..96&family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./contact.css" />
     <title>Contact Us</title>
   </head>
   <body>
     <header>
+      <nav>
+        <div class="logo">
+          <img src="../assets/logo.jpg" alt="CRIZ Logo" />
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="links">
+          <li><a href="../home/homepage.html">Home</a></li>
+          <li><a href="../mission/mission.html">Our Mission</a></li>
+          <li><a href="../AboutUs/About.html">Meet the Team</a></li>
+          <li><a href="../Contact/contact.html">Contact Us</a></li>
+          <li><a href="../donate/donate.html" class="btn">Donate</a></li>
+        </ul>
+        <div class="curtain" id="mobileCurtain">
+          <nav class="curtain-menu">
+            <a href="../home/homepage.html">Home</a>
+            <a href="../mission/mission.html">Our Mission</a>
+            <a href="../AboutUs/About.html">Meet the Team</a>
+            <a href="../Contact/contact.html">Contact Us</a>
+            <a href="../donate/donate.html">Donate</a>
+          </nav>
+        </div>
+      </nav>
     </header>
     <div>
       <h2 class="contact-title">Contact Us</h2>
@@ -82,10 +111,10 @@
       </form>
     </div>
     <footer>
-      <a><div>Conatct Us</div></a>
-      <a><div>FAQs</div></a>
-      <div>Privacy Policy</div>
-      <div>Terms of Use</div>
+      <a href="../Contact/contact.html"><div>Contact Us</div></a>
+      <a href="../FAQs/faqs.html"><div>FAQs</div></a>
+      <a><div>Privacy Policy</div></a>
+      <a href="#"><div>Terms of Use</div></a>
       <div class="trademark">Copyright © 2025 CIRZ. All rights reserved.</div>
       <div class="disclosure">
         CIRZ is a student project for educational purposes and is not a

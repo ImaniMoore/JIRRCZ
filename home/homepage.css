@@ -143,7 +143,8 @@ nav {
     height: auto;
     margin: 20px 5px 0 30px;
   }
-  .desc, .desc a {
+  .desc,
+  .desc a {
     font-size: 2rem;
   }
   .info-title {
@@ -306,4 +307,40 @@ nav {
     background-color: #003260;
     color: white;
   }
+}
+footer {
+  margin-top: auto;
+  background-color: #04b2e2;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.trademark {
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #b3b3b3;
+  background-color: #04b2e2;
+}
+
+.disclosure {
+  font-size: 0.8rem;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.4;
+  margin-top: 5px;
+  background-color: #04b2e2;
 }/*# sourceMappingURL=homepage.css.map */
