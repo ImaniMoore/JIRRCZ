@@ -24,10 +24,28 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-header,
-footer {
+/*--- Navigation Bar ---*/
+header {
+  height: 100px;
+  position: sticky;
+  top: 0;
   background-color: #04B2E2;
-  height: 80px;
+  z-index: 1;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .mission-sec {
@@ -91,27 +109,32 @@ footer {
     animation: slide-in-left linear;
     animation-timeline: view();
     animation-range-start: cover;
-    animation-range-end: 40%;
+    animation-range-end: 30%;
   }
   .mission-sec__info--color-block {
     animation: slide-in-right linear;
     animation-timeline: view();
     animation-range-start: cover;
-    animation-range-end: 40%;
+    animation-range-end: 30%;
   }
 }
 @media screen and (min-width: 700px) {
   .mission-sec__img {
     max-height: 400px;
   }
-  #last-mission-block {
-    animation-range-end: 30%;
-  }
   .mission-block__img {
     height: 300px;
   }
 }
+@media screen and (min-width: 1024px) {
+  #second-mission-block {
+    animation-range-end: 10%;
+  }
+}
 @media screen and (min-width: 1200px) {
+  #second-mission-block {
+    animation-range-end: 30%;
+  }
   .mission-sec__img {
     -o-object-position: 50% 75%;
        object-position: 50% 75%;
@@ -124,5 +147,130 @@ footer {
   }
   .mission-sec__info p {
     width: 60%;
+  }
+}
+/*small screens*/
+@media screen and (max-width: 699px) {
+  .curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(4, 178, 226, 0.9);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.6s ease-in-out;
+    z-index: 5;
+  }
+  .curtain-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .curtain-menu a {
+    margin: 0px;
+    padding: 30px;
+    border-radius: 40px;
+  }
+  .curtain-menu a:active {
+    background-color: rgba(0, 50, 96, 0.9);
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu-toggle:checked ~ .curtain {
+    height: 100vh;
+  }
+  .menu-icon {
+    font-size: 50px;
+    display: block;
+    margin-right: 30px;
+    margin-top: -15px;
+    color: #003260;
+  }
+  nav .links {
+    display: none;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+}
+/* Tablets */
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  .logo img {
+    height: 85px;
+    width: auto;
+    border-radius: 50%;
+    margin: 10px 10px;
+  }
+  input {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+  .curtain {
+    display: none;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 40px 30px;
+    gap: 30px;
+  }
+  ul a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  ul .btn {
+    background-color: #FFA69E;
+    color: white;
+    padding: 15px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  ul a:active {
+    color: #003260;
+    background-color: white;
+  }
+}
+/* Desktops */
+@media screen and (min-width: 1200px) {
+  ul a {
+    text-decoration: none;
+    color: white;
+  }
+  ul .btn {
+    background-color: #FFA69E;
+    color: white;
+    padding: 15px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  ul a:hover {
+    color: #003260;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  ul .btn:hover {
+    background-color: #003260;
+    color: white;
   }
 }/*# sourceMappingURL=mission.css.map */

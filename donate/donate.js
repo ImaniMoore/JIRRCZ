@@ -10,3 +10,7 @@ donationBtn.forEach((btn) => {
   });
 
 });
+
+document.getElementById('donation-form').addEventListener('submit', function(event) {
+  alert('Thank you for your donation!');
+});
