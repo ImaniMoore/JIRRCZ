@@ -1,5 +1,6 @@
+// test validation for contact form
 function validateForm(e) {
-  Event.preventDefault();
+  e.preventDefault();
   let x = document.forms["myForm"]["Fname"].value;
   let y = document.forms["myForm"]["Lname"].value;
   let z = document.forms["myForm"]["email"].value;
@@ -16,11 +17,10 @@ function validateForm(e) {
   } else if (a == "") {
     alert("Phone number must be entered");
     return false;
-  }
-
+  }else{
   alert("Submitted");
   return true;
-}
+}}
 
 let contactForm = document.getElementById("contact-form");
 
